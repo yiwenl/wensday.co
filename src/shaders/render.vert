@@ -23,7 +23,7 @@ varying vec4 vColor;
 varying vec3 vNormal;
 varying vec3 vDebug;
 
-const float radius = 0.01;
+const float radius = 0.015;
 
 
 float rand(vec4 seed4) {

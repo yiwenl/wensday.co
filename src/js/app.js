@@ -79,8 +79,13 @@ function _init3D() {
 	//	INIT ASSETS
 	Assets.init();
 
-	//	CREATE SCENE
-	const scene = new SceneApp();
+	// alert('isMobile : ' + GL.isMobile)
 
+	//	CREATE SCENE
+	if(!GL.isMobile) {
+		const scene = new SceneApp();	
+	} else {
+		document.body.classList.add('is-mobile');
+	}
 	
 }

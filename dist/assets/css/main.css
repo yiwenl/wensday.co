@@ -42,6 +42,11 @@ h1, h2, h3, h4, text, p {
   .isLoading .Main-Canvas {
     opacity: 0; }
 
+body.is-mobile {
+  background: url("../assets/css-img/mobile-background.jpg");
+  background-size: cover;
+  background-position: center; }
+
 .Message {
   position: absolute;
   z-index: 999;
@@ -74,8 +79,9 @@ h1, h2, h3, h4, text, p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 999; }
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  letter-spacing: 0.5px; }
 
 .outer-container {
   width: 50%;
@@ -86,13 +92,26 @@ h1, h2, h3, h4, text, p {
   flex-direction: column;
   padding-left: 7.5%;
   padding-right: 15%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  /*.is-mobile & {
+		width: 100%;
+		padding-left: $padding/2;
+		padding-right: $padding/2;
+	}*/ }
+  .outer-container div:not(:nth-child(1)) {
+    margin-top: 40px; }
+  @media screen and (max-width: 1024px) {
+    .outer-container {
+      width: 100%;
+      padding-left: 7.5%;
+      padding-right: 7.5%; } }
 
 .text-container span {
   font-size: 32px;
   font-weight: bold;
   line-height: 56px;
-  font-style: italic; }
+  font-style: italic;
+  margin-left: -3px; }
 
 .text-container a:link {
   color: #ffb446; }
@@ -107,7 +126,6 @@ h1, h2, h3, h4, text, p {
   color: #ffb446; }
 
 .links-container {
-  margin-top: 40px;
   /*$colorLink: rgba(180, 180, 180, 1);*/ }
   .links-container a:link {
     color: #ffb446;
@@ -118,5 +136,22 @@ h1, h2, h3, h4, text, p {
     color: #ffb446; }
   .links-container a:active {
     color: #ffb446; }
+
+.button-social {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+  .button-social.twitter {
+    background: url("../assets/css-img/icon-twitter.png");
+    background-size: cover; }
+  .button-social.instagram {
+    background: url("../assets/css-img/icon-instagram.png");
+    background-size: cover; }
+  .button-social.vimeo {
+    background: url("../assets/css-img/icon-vimeo.png");
+    background-size: cover; }
 
 /*# sourceMappingURL=main.css.map*/

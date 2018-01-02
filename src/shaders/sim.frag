@@ -146,7 +146,7 @@ void main(void) {
 	//	rotate
 	vec2 dir = normalize(pos.xz);
 	dir      = rotate(dir, PI * 0.6);
-	acc.xz   += dir * mix(envOffset, 1.0, .25) * 0.75;
+	acc.xz   += dir * mix(envOffset, 1.0, .25) * 0.5;
 
 	vel             += acc * .002 * speed;
 
@@ -157,7 +157,7 @@ void main(void) {
 		vel -= normalize(pos) * f;
 	}
 
-	float decrease = .96 - envOffset * 0.03;
+	float decrease = .96 - envOffset * 0.02;
 	vel *= decrease;
 
 
