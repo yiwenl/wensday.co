@@ -43,7 +43,7 @@ h1, h2, h3, h4, text, p {
     opacity: 0; }
 
 body.is-mobile {
-  background: url("./assets/css-img/mobile-background.jpg");
+  background: url("assets/css-img/mobile-background.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -145,13 +145,13 @@ body.is-mobile {
   outline: none;
   cursor: pointer; }
   .button-social.twitter {
-    background: url("./assets/css-img/icon-twitter.png");
+    background: url("assets/css-img/icon-twitter.png");
     background-size: cover; }
   .button-social.instagram {
-    background: url("./assets/css-img/icon-instagram.png");
+    background: url("assets/css-img/icon-instagram.png");
     background-size: cover; }
   .button-social.vimeo {
-    background: url("./assets/css-img/icon-vimeo.png");
+    background: url("assets/css-img/icon-vimeo.png");
     background-size: cover; }
 
 /*# sourceMappingURL=main.css.map*/

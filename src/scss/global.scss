@@ -54,7 +54,7 @@ h1,h2,h3,h4,text,p {
 
 body {
 	&.is-mobile {
-		background: url('./assets/css-img/mobile-background.jpg');
+		background: url('assets/css-img/mobile-background.jpg');
 		background-size: cover;
 		background-position: center;
 	}
@@ -199,17 +199,17 @@ body {
 	cursor: pointer;
 
 	&.twitter {
-		background: url('./assets/css-img/icon-twitter.png');
+		background: url('assets/css-img/icon-twitter.png');
 		background-size: cover;
 	}
 
 	&.instagram {
-		background: url('./assets/css-img/icon-instagram.png');
+		background: url('assets/css-img/icon-instagram.png');
 		background-size: cover;
 	}
 
 	&.vimeo {
-		background: url('./assets/css-img/icon-vimeo.png');
+		background: url('assets/css-img/icon-vimeo.png');
 		background-size: cover;
 	}
 }
