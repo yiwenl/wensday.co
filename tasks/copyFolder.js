@@ -7,8 +7,9 @@ const path = require('path');
 const src = path.resolve(__dirname, '../dist/assets');
 const dist = path.resolve(__dirname, '../assets');
 
-console.log(src);
-console.log(dist);
+const srcIndex = path.resolve(__dirname, '../dist/index.html');
+const distIndex = path.resolve(__dirname, '../index.html');
+
 
 const emptyDist = () => new Promise((resolve, reject)=> {
 	fs.emptyDir(dist, (err) => {
@@ -32,9 +33,22 @@ const copyAssets = () => new Promise((resolve, reject) => {
 });
 
 
+const copyIndex = () => new Promise((resolve, reject) => {
+	fs.copy(srcIndex, distIndex, err => {
+		if(err) {
+			reject(err);
+		}
+
+		resolve();
+	});
+});
+
+
+
 
 emptyDist()
 .then( copyAssets )
+.then( copyIndex )
 .then( ()=> {
 	console.log('All Done');
 })
